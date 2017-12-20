@@ -203,12 +203,16 @@ header.dark nav ul li a:hover{
     margin: 20px auto;
 }
 
-.services ul li h2{
+.services ul li h2 a{
     color: #838988;
     font-family: 'Quicksand';
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+}
+
+.services ul li h2 a:hover{
+    color: #D6D8D8;
 }
 
 .services ul li p{
