@@ -1,19 +1,18 @@
 /*
-
     Author: Adam McCarthy
     Template: Data Portal
-
     ~~~~~~~~~~~~~~~~~~~~~
-
     - fonts
-
 */
 
 
+
+/*  Fonts  */
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Rubik");
 
+/*  General CSS*/
 body{
-    background: #F4F4F4
+    background: #F4F4F4;
 }
 
 .wrapper{
@@ -22,7 +21,7 @@ body{
 }
 
 h1, h2, h3, h4, h5 ,h6{
-    color: #38403D;
+    color: #626262;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
 }
@@ -35,25 +34,59 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 h1, h2, h3, h4,
 h5, h6          { font-weight: bolder }
 
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
 
-/*     Billboard    */
+
+
+
+
+
+
+/*    Billboard    */
 .billboard{
     width: 100%;
     height: 690px;
     position: relative;
 }
 
-.billboard.v-one{ 
-     
+.billboard.dark{
+    background: url('../img/billboard2.jpg') no-repeat;
+    
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
 
+
+.billboard .shadow{
+    position: absolute;
+    width: 100%;
+    height: 142px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1px;
+    background: url('../img/shadow.png') repeat-x;
+}
+
 .billboard .caption{
     margin-top: 130px;
     text-align: center;
+}
+
+.billboard .caption.dark{
+    color: #38403D;
 }
 
 .billboard .caption h1{
@@ -64,15 +97,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard .caption.dark h1{
-    color: #5d5d5d;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.billboard .caption.v-one p{
-    color: #38403D;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    color: #5d5d5d
 }
 
 .billboard .caption p{
@@ -81,8 +106,11 @@ h5, h6          { font-weight: bolder }
     margin-bottom: 30px;
 }
 
+.billboard .caption.dark p{
+    color: #38403D;
+}
+
 .billboard .caption hr{
-    background: #38403D;
     display: inline-block;
     height: 1px;
     width: 30px;
@@ -91,19 +119,31 @@ h5, h6          { font-weight: bolder }
     padding: 0;
 }
 
+.billboard .caption.dark hr{
+    background: #5d5d5d;
+}
 
 
 
 
+
+
+/*    header    */
 header{
     width: 100%;
     height: 125px;
+}
+
+header .logo{
+    float: left;
+    margin-top: 50px;
 }
 
 header nav{
     float: right;
     margin-top: 57px;
 }
+
 
 header nav ul li{
     list-style: none;
@@ -123,10 +163,126 @@ header nav ul li a{
     -o-transition:all .2s linear;
 }
 
-header.v-one nav ul li a{  
+header.dark nav ul li a{  
     color: #838988;
 }
 
-header.v-one nav ul li a:hover{
+header.dark nav ul li a:hover{
+    color: #D6D8D8;
+}
+
+
+
+
+
+
+
+/*    Services    */
+.services ul{
+    margin-top: 100px;
+}
+
+.services ul li{
+    list-style: none;
+    display: block;
+    width: 313px;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.services ul li:first-child{
+    margin-left: 0;
+}
+
+.services ul li .separator{
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #f6f6f6;
+    margin: 20px auto;
+}
+
+.services ul li h2{
+    color: #838988;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.services ul li p{
+   color: #838988;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    line-height: 28px; 
+    margin-top: 40px;
+    letter-spacing: .5px;
+}
+
+
+
+
+
+
+
+/*    Block before footer    */
+.block_f{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+/*    footer    */
+footer{
+    padding: 35px 0;
+    overflow: hidden;
+}
+
+footer .footer_logo{
+    float: left;
+}
+
+footer .rights p{
+    float: left;
+    color: #838988;
+    font-family: "Rubik";
+    font-size: 13px;
+    margin: 5px 0 0 40px; 
+}
+
+footer nav ul{
+    float: right;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 5px; 
+}
+
+footer nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+
+footer nav ul li a{
+    color: #838988;
+    font-family: "Rubik";
+    font-size: 13px;
+    text-decoration: none;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+
+footer nav ul li a:hover{
     color: #D6D8D8;
 }
