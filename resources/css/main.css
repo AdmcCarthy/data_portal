@@ -42,3 +42,91 @@ h5, h6          { font-weight: bolder }
     height: 690px;
     position: relative;
 }
+
+.billboard.v-one{ 
+     
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.billboard .caption{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.billboard .caption h1{
+    font-family: 'Quicksand';
+    font-size: 50px;
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+.billboard .caption.dark h1{
+    color: #5d5d5d;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.billboard .caption.v-one p{
+    color: #38403D;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.billboard .caption p{
+    font-family: 'Quicksand';
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.billboard .caption hr{
+    background: #38403D;
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    border: 0!important;   
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header{
+    width: 100%;
+    height: 125px;
+}
+
+header nav{
+    float: right;
+    margin-top: 57px;
+}
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;  
+    font-family: "Rubik";
+    font-size: 14px;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+
+header.v-one nav ul li a{  
+    color: #838988;
+}
+
+header.v-one nav ul li a:hover{
+    color: #D6D8D8;
+}
